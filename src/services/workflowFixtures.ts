@@ -87,7 +87,7 @@ export const DEMO_CASES: DemoCase[] = [
       inputHash: 'illustrative-clear-rx-v1',
       jobState: 'complete',
       revision: 1,
-      source: { fileName: 'clear-rx.svg', mimeType: 'image/svg+xml', url: '/demo/clear-rx.svg', pageCount: 1 },
+      source: { fileName: 'clear-rx.png', mimeType: 'image/png', url: '/demo/clear-rx.png', pageCount: 1 },
       categorization: {
         label: 'prescription',
         confidence: 'high',
@@ -125,7 +125,7 @@ export const DEMO_CASES: DemoCase[] = [
       inputHash: 'illustrative-ambiguous-rx-v1',
       jobState: 'complete',
       revision: 1,
-      source: { fileName: 'ambiguous-rx.svg', mimeType: 'image/svg+xml', url: '/demo/ambiguous-rx.svg', pageCount: 1 },
+      source: { fileName: 'ambiguous-rx.png', mimeType: 'image/png', url: '/demo/ambiguous-rx.png', pageCount: 1 },
       categorization: {
         label: 'prescription',
         confidence: 'low',
