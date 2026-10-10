@@ -1,0 +1,20 @@
+{
+  "annotation_basis": "Agent annotations from upstream audited transcriptions; originals inspected visually for document type. Field legibility needs independent human review.",
+  "scope": "Non-prescription rejection and identity extraction only. Historical medication mentions are not dispensing orders.",
+  "cases": {
+    "template_4_sample_2_normal": {"patientName": ["Johnathan A. Doe"], "dateOfBirth": ["05/15/1970"]},
+    "template_8_sample_2_normal": {"patientName": ["Emily Peterson", "PETERSON, Emily"], "dateOfBirth": ["09/01/1995"]},
+    "template_4_sample_3_handwriting": {"patientName": ["Maria S. Garcia"], "dateOfBirth": ["03/02/1987"]},
+    "template_8_sample_3_handwriting": {"patientName": ["Robert Miller", "MILLER, Robert"], "dateOfBirth": ["03/12/1971"]},
+    "template_4_sample_4_poor": {"patientName": ["Robert Anderson"], "dateOfBirth": ["10/30/1952"]},
+    "template_8_sample_4_poor": {"patientName": ["Brenda Davis", "DAVIS, Brenda"], "dateOfBirth": ["07/19/1978"]},
+    "template_4_sample_5_rotated": {"patientName": ["Jessica Chen"], "dateOfBirth": ["04/12/1997"]},
+    "template_8_sample_5_rotated": {"patientName": ["Luis Gomez", "GOMEZ, Luis"], "dateOfBirth": ["10/16/1965"]},
+    "template_7_sample_4_mixed": {"patientName": ["Michael Johnson"], "dateOfBirth": ["08/15/2002"]},
+    "template_8_sample_7_mixed": {"patientName": ["Patricia Thompson", "THOMPSON, Patricia"], "dateOfBirth": ["04/11/1980"]}
+  },
+  "expected_document_type": "clinical-other",
+  "expected_order_fields": {"drug": null, "strength": null, "dosageForm": null, "directions": null, "quantity": null, "refills": null, "prescriber": null, "writtenDate": null},
+  "legibility_review": "pending",
+  "positive_prescription_cases": 0
+}

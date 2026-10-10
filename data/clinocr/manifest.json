@@ -1,0 +1,109 @@
+{
+  "source": "https://github.com/ClinOCR-Bench/ClinOCR-Bench/releases/download/v1.0/ClinOCR-Bench-v1.0.zip",
+  "archive_sha256": "ce1d231138050abf7f458ba5e6bd75c6ee2f3832b72f22296843da4c5ba45457",
+  "license": "MIT",
+  "synthetic": true,
+  "cases": [
+    {
+      "id": "template_4_sample_2_normal",
+      "subset": "normal",
+      "template": 4,
+      "image": "data/clinocr/images/template_4_sample_2_normal.jpg",
+      "transcription": "data/clinocr/transcriptions/template_4_sample_2_normal.txt",
+      "sha256": "aa2eda744b64883ebaacd86f15c1936f1594e6d7d72607b55041e62f127666ab",
+      "documentType": "clinical-other",
+      "split": "eval"
+    },
+    {
+      "id": "template_8_sample_2_normal",
+      "subset": "normal",
+      "template": 8,
+      "image": "data/clinocr/images/template_8_sample_2_normal.jpg",
+      "transcription": "data/clinocr/transcriptions/template_8_sample_2_normal.txt",
+      "sha256": "1de63ba9d1198fe7e3060bae084813736d31552f496da2bf3d1c542747063b86",
+      "documentType": "clinical-other",
+      "split": "eval"
+    },
+    {
+      "id": "template_4_sample_3_handwriting",
+      "subset": "handwriting",
+      "template": 4,
+      "image": "data/clinocr/images/template_4_sample_3_handwriting.jpg",
+      "transcription": "data/clinocr/transcriptions/template_4_sample_3_handwriting.txt",
+      "sha256": "656c762e74e76533665361aa598f082bf7722688f414c0da20cad0af70cf0d54",
+      "documentType": "clinical-other",
+      "split": "eval"
+    },
+    {
+      "id": "template_8_sample_3_handwriting",
+      "subset": "handwriting",
+      "template": 8,
+      "image": "data/clinocr/images/template_8_sample_3_handwriting.jpg",
+      "transcription": "data/clinocr/transcriptions/template_8_sample_3_handwriting.txt",
+      "sha256": "a04b68a525f6fc5dca646f26e2a3f363b5264210e1296037c95b2b7180664c6a",
+      "documentType": "clinical-other",
+      "split": "eval"
+    },
+    {
+      "id": "template_4_sample_4_poor",
+      "subset": "poor",
+      "template": 4,
+      "image": "data/clinocr/images/template_4_sample_4_poor.jpg",
+      "transcription": "data/clinocr/transcriptions/template_4_sample_4_poor.txt",
+      "sha256": "a04768583b1b80aa9cd6418898eda44cae3f790f85606b43437948f801ddef3d",
+      "documentType": "clinical-other",
+      "split": "eval"
+    },
+    {
+      "id": "template_8_sample_4_poor",
+      "subset": "poor",
+      "template": 8,
+      "image": "data/clinocr/images/template_8_sample_4_poor.jpg",
+      "transcription": "data/clinocr/transcriptions/template_8_sample_4_poor.txt",
+      "sha256": "74cb59dfbfa16d33902a2fc9eb8ea417f429f51abf00cc0fa32be95683667460",
+      "documentType": "clinical-other",
+      "split": "eval"
+    },
+    {
+      "id": "template_4_sample_5_rotated",
+      "subset": "rotated",
+      "template": 4,
+      "image": "data/clinocr/images/template_4_sample_5_rotated.jpg",
+      "transcription": "data/clinocr/transcriptions/template_4_sample_5_rotated.txt",
+      "sha256": "3fd9e46c7af6e078c7fa11f3edf3b4e2853c4891377ba5f08f856782f8dd0cf0",
+      "documentType": "clinical-other",
+      "split": "eval"
+    },
+    {
+      "id": "template_8_sample_5_rotated",
+      "subset": "rotated",
+      "template": 8,
+      "image": "data/clinocr/images/template_8_sample_5_rotated.jpg",
+      "transcription": "data/clinocr/transcriptions/template_8_sample_5_rotated.txt",
+      "sha256": "fb7d1cd03e3384ffdb3a8c66545c92793f484a4233d2803d835c5034b97e2ad8",
+      "documentType": "clinical-other",
+      "split": "eval"
+    },
+    {
+      "id": "template_7_sample_4_mixed",
+      "subset": "mixed",
+      "template": 7,
+      "image": "data/clinocr/images/template_7_sample_4_mixed.jpg",
+      "transcription": "data/clinocr/transcriptions/template_7_sample_4_mixed.txt",
+      "sha256": "24d3e8c98b2cfe6bf0a2d22651a5c311b39073a358aa31abba5d0191ec7c27b0",
+      "documentType": "clinical-other",
+      "split": "eval"
+    },
+    {
+      "id": "template_8_sample_7_mixed",
+      "subset": "mixed",
+      "template": 8,
+      "image": "data/clinocr/images/template_8_sample_7_mixed.jpg",
+      "transcription": "data/clinocr/transcriptions/template_8_sample_7_mixed.txt",
+      "sha256": "5a7f84a6217d140db6f5a38b3cb5857b40df061351ffa08fd59b793271cfae3f",
+      "documentType": "clinical-other",
+      "split": "eval"
+    }
+  ],
+  "limitation": "Clinical notes/referrals only; zero positive prescription orders. This is a smoke test, not a prescription accuracy benchmark."
+}

@@ -1,0 +1,17 @@
+{
+  "documentType": "prescription",
+  "transcription": "SYNTHETIC UNIT FIXTURE ONLY. Test Person; 01/02/1990; Examplemed; 25 mg; tablet; Take 1 tablet by mouth daily; quantity 30; refills 0; Dr. Test; 10/10/2026.",
+  "fields": {
+    "patientName": {"value": "Test Person", "status": "extracted", "sourceText": "Test Person", "confidence": null, "candidates": [], "reason": "Visible name"},
+    "dateOfBirth": {"value": "01/02/1990", "status": "extracted", "sourceText": "01/02/1990", "confidence": null, "candidates": [], "reason": "Visible date of birth"},
+    "drug": {"value": "Examplemed", "status": "extracted", "sourceText": "Examplemed", "confidence": null, "candidates": [], "reason": "Visible drug"},
+    "strength": {"value": "25 mg", "status": "extracted", "sourceText": "25 mg", "confidence": null, "candidates": [], "reason": "Visible strength"},
+    "dosageForm": {"value": "tablet", "status": "extracted", "sourceText": "tablet", "confidence": null, "candidates": [], "reason": "Visible form"},
+    "directions": {"value": "Take 1 tablet by mouth daily", "status": "extracted", "sourceText": "Take 1 tablet by mouth daily", "confidence": null, "candidates": [], "reason": "Visible directions"},
+    "quantity": {"value": "30", "status": "extracted", "sourceText": "quantity 30", "confidence": null, "candidates": [], "reason": "Visible quantity"},
+    "refills": {"value": "0", "status": "extracted", "sourceText": "refills 0", "confidence": null, "candidates": [], "reason": "Visible refills"},
+    "prescriber": {"value": "Dr. Test", "status": "extracted", "sourceText": "Dr. Test", "confidence": null, "candidates": [], "reason": "Visible prescriber"},
+    "writtenDate": {"value": "10/10/2026", "status": "extracted", "sourceText": "10/10/2026", "confidence": null, "candidates": [], "reason": "Visible written date"}
+  },
+  "notes": ["Synthetic unit-test extraction; not an evaluation prescription or safety measurement."]
+}
