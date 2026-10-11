@@ -16,11 +16,20 @@ flowchart LR
     B --> C[Document understanding]
     C --> D[Evidence orchestrator]
     D --> E[Local OCR evidence]
-    D --> P[PRISM gateway<br/>guardrails + trace]
-    P --> F[Primary vision]
-    P --> G[Blind verifier]
-    P --> T[Tavily public lookup]
-    P -. PHI-safe telemetry .-> Z[PRISM observability]
+    D --> P
+    subgraph PRISM[PRISM Gateway]
+        P[Gateway + guardrails]
+        Z[PRISM telemetry]
+        P -. PHI-safe trace .-> Z
+    end
+    subgraph PROVIDERS[External providers behind PRISM]
+        F[Primary vision]
+        G[Blind verifier]
+        T[Tavily public lookup]
+    end
+    P --> F
+    P --> G
+    P --> T
     E --> H[Evidence reconciliation]
     F --> H
     G --> H
@@ -35,7 +44,7 @@ flowchart LR
     O --> I
 ```
 
-The PRISM gateway is the controlled outbound boundary for hosted model and Tavily calls. It applies PHI-safe request construction, provider allowlists, prompt-injection isolation, output/schema checks, cost and timeout limits, and emits PHI-safe telemetry. The blind verifier never receives the primary answer or OCR/Tavily results.
+The **PRISM Gateway** is the controlled outbound boundary for hosted model and Tavily calls. It applies PHI-safe request construction, provider allowlists, prompt-injection isolation, output/schema checks, cost and timeout limits, and emits PHI-safe telemetry. The **Tavily public lookup** is shown separately inside the external-provider group; it can add evidence or review flags but cannot approve a dose. The blind verifier never receives the primary answer or OCR/Tavily results.
 
 The backend owns the final `approved`, `confirm`, `rejected`, or `failed` disposition. `approved` means approved for downstream order entry and automatically released; it is not clinical or dispensing approval. `confirm` carries typed review flags such as ambiguous fields, OCR contradiction, low image quality, prescriber conflict, unusual age/dose plausibility, or unavailable/untrusted lookup. Automatic release requires complete required fields, source evidence, independent reading agreement, supported document structure, passing deterministic checks, and calibrated risk within the locked operating range. Unknown checks block release. Corrections create immutable revisions and audit events; the development council is not part of runtime processing.
 
